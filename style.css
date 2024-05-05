@@ -1,0 +1,497 @@
+:root{
+    --bs-body-font-family: 'Lato', sans-serif !important;
+}
+.row{
+    --bs-gutter-x: 1.875rem !important;
+}
+.last{
+    height: 304px;
+}
+.top-img{
+    background-image: url(./Images/Banner.png);
+    background-size: cover;
+    height: 735px;
+}
+header{
+    height: 68px;
+    align-items: center;
+}
+.act{
+    color: #898989 !important;
+}
+ul{
+    list-style: none;
+    gap: 18px;
+    align-items: center
+}
+a{
+    text-decoration: none !important;
+}
+.hov{
+    color: white !important;
+}
+.hov:hover{
+    color: #898989 !important;
+}
+nav{
+    align-items: center;
+    gap: 66px;
+}
+.heading{
+    margin-top: 248px !important;
+}
+h1{
+    color: #fff !important;
+}
+.first{
+    font-size: 44px;
+}
+.second{
+    font-size: 52px;
+    font-weight: 900;
+}
+.l-btn button{
+    width: 169px;
+    height: 86px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+}
+.l-btn{
+    margin-top: 94px !important;
+}
+.card{
+    border: none !important;
+    border-radius: 0 !important;
+}
+.c-im{
+    height: 51px;
+    background: #111;
+}
+.c-t{
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    line-height: 19px; 
+}
+.ct-1{
+    top: 8px;
+}
+.row{
+    margin-top: 46px !important;
+}
+.c-btn button{
+    width: 129px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    top: 87%;
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.container {
+    position: relative;
+  }
+.slider-container {
+    display: flex; /* Use flexbox to arrange cards and arrows */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+  }
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 84%;
+  transform: translateY(-50%);
+  color: #111;
+  background-color: transparent;
+  border: none; /* Arrow button border */
+  font-size: 24px;
+  
+}
+.custom-prev-arrow {
+  left: -60px; /* Position previous arrow on the left side */
+}
+.custom-next-arrow {
+  right: -8px; /* Position next arrow on the right side */
+}
+footer{
+    height: 164px;
+    background-color: #111;
+    margin-top: 249px;
+}
+.icons{
+    gap: 21px;
+    padding-top: 22px;
+}
+.f-li{
+    padding-top: 19px;
+}
+.f-li ul{
+    gap: 0;
+}
+.icons i{
+    font-size: 38px;
+}
+.fa-linkedin, .fa-square-twitter, .fa-square-google-plus{
+    color: #464646;
+}
+.f-li .act{
+    color: #fff !important;
+}
+.f-li .hov{
+    color: #464646 !important;
+}
+.copyright{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 13px;
+}
+.list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 24rem;
+    width: 12rem;
+    background-color: #898989;
+    display: none;
+    z-index: 88;
+}
+.res-nav li a{
+    color: #fff !important;
+    font-size: 18px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+@media not all and (min-width: 1536px) {
+    nav{
+        justify-content: space-between;
+        gap: 0;
+    }   
+    .card{
+        width: 16rem !important;
+    } 
+}
+@media not all and (min-width: 1280px) {
+    nav{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .card{
+        width: 14rem !important;
+    } 
+    .c-t{
+        font-size: 16px;
+    }
+    .c-btn button{
+        font-size: 14px;
+        width: 129px;
+        height: 35px;
+        top: 85%;
+    }
+    .custom-prev-arrow {
+        left: -40px; /* Position previous arrow on the left side */
+      }
+      
+    .custom-next-arrow {
+        right: -18px; /* Position next arrow on the right side */
+      }
+    .custom-prev-arrow,
+    .custom-next-arrow{
+        top: 70%;
+    } 
+    .top-img{
+        height: 518px;
+    }
+    footer{
+        margin-top: 220px;
+    }
+    h1{
+        margin-bottom: 0 !important;
+    }
+    .heading{
+        margin-top: 190px !important;
+    }
+    .l-btn{
+        margin-right: 0;
+        margin-top: 22px !important;
+    }
+    .l-btn button{
+        width: 158px;
+        height: 54px;
+        font-size: 16px;
+    }
+    .row{
+        margin-top: 30px !important;
+        justify-content: flex-end;
+    }
+    .first{
+        font-size: 34px;
+    }
+    .second{
+        font-size: 44px;
+    }
+    ul a{
+        font-size: 14px;
+    }
+    nav img{
+        width: 12rem;
+    }
+    .top-nav a{
+        font-size: 12px;
+    }
+}
+@media not all and (min-width: 1024px) {
+    .top-img{
+        height: 100vh;
+    }
+    ul a{
+        display: none;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    nav img{
+        width: 14rem;
+    }
+    /* .text-white{
+        display: ;
+    } */
+    .menu{
+        font-size: 28px;
+        width: 2rem;
+        height: 2rem;
+    }
+    .menu i{
+        color: #fff;
+        z-index: 99;
+        font-size: 28px;
+    }
+    .list{
+        height: 24rem;
+        width: 16rem;
+        background-color: #898989;
+        display: none;
+        z-index: 88;
+    }
+    /* .card{
+        width: 10rem !important;
+    } */
+    .c-t{
+        font-size: 11px;
+    }
+    .f-li ul{
+        display: none !important;
+        
+    }
+    .heading{
+        margin-top: 142px !important
+    }
+    .first{
+        font-size: 24px;
+    }
+    .second{
+        font-size: 32px;
+    }
+    .card{
+        width: 12rem !important;
+    }
+}
+@media not all and (min-width: 768px) {
+    nav{
+        justify-content: space-between;
+    }
+    nav img{
+        width: 14rem;
+    }
+    /* .text-white{
+        display: ;
+    } */
+    .menu{
+        font-size: 28px;
+        width: 2rem;
+        height: 2rem;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu i{
+        color: #fff;
+        z-index: 99;
+        font-size: 28px;
+    }
+    .fa-xmark::before{
+        position: fixed !important;
+    }
+    .list{
+        height: 24rem;
+        width: 16rem;
+        background-color: #111;
+        display: none;
+        z-index: 88;
+    }
+    .card{
+        width: 9rem !important;
+    }
+    .l-btn{
+        margin-top: 14px !important;
+    }
+    .l-btn button{
+        width: 134px;
+        height: 62px;
+    }
+    .c-btn button{
+        font-size: 10px;
+        width: 96px;
+        height: 29px;
+    }
+    .c-t{
+        font-size: 11px;
+    }
+    .f-li ul{
+        display: none !important;
+    }
+    .custom-prev-arrow,
+    .custom-next-arrow {
+        position: absolute;
+        top: 64%;
+        background-color: transparent;
+    }
+    .res-nav li a{
+        display: block;
+        font-size: 14px;
+    }
+    .heading{
+        margin-top: 120px !important;
+    }
+    
+    .res-nav li a{
+        font-size: 14px;
+        text-align: left;
+    }
+    .res-nav{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+ }
+@media not all and (min-width: 640px) { 
+    .top-nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu i{
+        font-size: 12px;
+        color: #fff;
+    }
+    .top-img{
+        height: 220px;
+    }
+    .last{
+        display: block;
+    }
+    .f-li ul{
+        display: none !important;
+    }
+    nav{
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    nav img{
+        width: 6rem;
+    }
+    header{
+        height: 38px;
+    }
+    .heading{
+        margin-top: 58px !important;
+    }
+    .first{
+        font-size: 18px;
+    }
+    .second{
+        font-size: 20px;
+    }
+    .l-btn button{      
+        width: 85px;
+        height: 40px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .l-btn{
+        margin-top: 4px !important;
+    }
+    .last{
+        height: 304px;
+    }
+    .card{
+        width: 10rem !important;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .custom-prev-arrow,
+    .custom-next-arrow{
+        display: none !important;
+    }
+    .copyright p{
+        font-size: 10px !important;
+        text-align: center;
+    }
+    .icons{
+        gap: 18px;
+    }
+    .icons i{
+        font-size: 24px;
+    }
+    .c-t{
+        font-size: 10px;
+        line-height: 12px; 
+    }
+    .c-btn button{
+        width: 98px;
+        height: 22px;
+        font-size: 12px;
+        top: 90%;
+    }
+    .col-md-3{
+        display: flex !important;
+        justify-content: center;
+
+    }
+    .menu i{
+        font-size: 18px;
+        z-index: 99;
+    }
+    .res-nav li a{
+        font-size: 14px;
+        text-align: left;
+    }
+    .res-nav{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+}
