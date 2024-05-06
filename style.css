@@ -554,4 +554,12 @@ footer{
     .custom-next-arrow{
         right: 22%;
     }
+    footer{
+        align-items: center;
+        height: max-content;
+    }
+    .copyright p{
+        padding-top: 8px;
+        padding-bottom: 12px;
+    }
 }
