@@ -21,7 +21,7 @@ header{
 }
 ul{
     list-style: none;
-    gap: 18px;
+    gap: 24px;
     align-items: center
 }
 a{
@@ -38,16 +38,19 @@ nav{
     gap: 66px;
 }
 .heading{
+    gap: 13px;
     margin-top: 248px !important;
 }
 h1{
     color: #fff !important;
 }
 .first{
+    margin-bottom: 0;
     font-size: 44px;
 }
 .second{
     font-size: 52px;
+    margin-bottom: 0;
     font-weight: 900;
 }
 .l-btn button{
@@ -117,10 +120,10 @@ h1{
   
 }
 .custom-prev-arrow {
-  left: -60px; /* Position previous arrow on the left side */
+  left: -32px; /* Position previous arrow on the left side */
 }
 .custom-next-arrow {
-  right: -8px; /* Position next arrow on the right side */
+  right: 12px; /* Position next arrow on the right side */
 }
 footer{
     height: 164px;
@@ -255,10 +258,21 @@ footer{
 }
 @media not all and (min-width: 1024px) {
     .top-img{
-        height: 100vh;
+        height: 59vh;
     }
-    ul a{
+    .text-white{
         display: none;
+    }
+    .top-nav{
+        display: none !important;
+    }
+    .f-li1 ul{
+        padding-top: 24px;
+        gap: 24px !important;
+    }
+    .f-li1 ul a{
+        display: flex;
+        font-size: 12px;
     }
     .copyright p{
         font-size: 12px;
@@ -295,9 +309,9 @@ footer{
     .c-t{
         font-size: 11px;
     }
-    .f-li ul{
-        display: none !important;
-        
+    .f-li1 ul{
+        display: flex !important; 
+        font-size: 0;       
     }
     .heading{
         margin-top: 142px !important
@@ -348,6 +362,9 @@ footer{
     .card{
         width: 9rem !important;
     }
+    .icons i{
+        font-size: 30px;
+    }
     .l-btn{
         margin-top: 14px !important;
     }
@@ -369,8 +386,15 @@ footer{
     .custom-prev-arrow,
     .custom-next-arrow {
         position: absolute;
-        top: 64%;
+        top: 68%;
         background-color: transparent;
+        font-size: 16px;
+    }
+    .custom-prev-arrow{
+        left: -22px;
+    }
+    .custom-next-arrow{
+        right: 6px;
     }
     .res-nav li a{
         display: block;
@@ -379,7 +403,22 @@ footer{
     .heading{
         margin-top: 120px !important;
     }
-    
+    .f-li1 ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 8px !important;
+        column-gap: 12px !important;
+
+    }
+    .f-li1 ul li{
+        font-size: 0px
+    }
+    .f-li1 ul a{
+        font-size: 12px;
+    }
+    .copyright p{
+        font-size: 11px;
+    }
     .res-nav li a{
         font-size: 14px;
         text-align: left;
@@ -404,7 +443,7 @@ footer{
         color: #fff;
     }
     .top-img{
-        height: 220px;
+        height: 280px;
     }
     .last{
         display: block;
@@ -444,7 +483,7 @@ footer{
         height: 304px;
     }
     .card{
-        width: 10rem !important;
+        width: 12rem !important;
     }
     .row{
         display: flex;
@@ -452,7 +491,15 @@ footer{
     }
     .custom-prev-arrow,
     .custom-next-arrow{
-        display: none !important;
+        display: flex !important;
+        justify-content: space-between;
+        top: 52%;
+    }
+    .custom-prev-arrow{
+        left: 0;
+    }
+    .custom-next-arrow{
+        right: 26px;
     }
     .copyright p{
         font-size: 10px !important;
@@ -465,7 +512,7 @@ footer{
         font-size: 24px;
     }
     .c-t{
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px; 
     }
     .c-btn button{
@@ -493,5 +540,18 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         gap: 22px;
+    }
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media not all and (min-width: 480px) {
+    .custom-prev-arrow{
+        left: 12%;
+    }
+    .custom-next-arrow{
+        right: 22%;
     }
 }
